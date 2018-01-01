@@ -4,15 +4,15 @@
 
 class ParameterVector : public ParameterVirtualWidget
 {
-	Q_OBJECT
+  Q_OBJECT
 public:
-	ParameterVector(ParameterObject *parameterobject, int showDescription);
-	void setValue() override;
-	void setParameterFocus() override;
+  ParameterVector(ParameterObject *parameterobject, int showDescription);
+  void setValue() override;
+  void setParameterFocus() override;
 
 protected slots:
-	void onChanged(double);
+  void onChanged(double);
 
 private:
-	bool volatile suppressUpdate; 
+  bool volatile suppressUpdate;
 };
